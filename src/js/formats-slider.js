@@ -1,22 +1,30 @@
-const swiper = new Swiper('.swiper-container', {
-    loop: true,
-    slidesPerView: 1,
-    spaceBetween: 20,
-    breakpoints: {
-        768: {
-            slidesPerView: 2,
+const swiperEl = document.querySelector('.swiper-container');
+
+if (swiperEl) {
+    const swiper = new Swiper(swiperEl, {
+        loop: true,
+        slidesPerView: 1,
+        spaceBetween: 20,
+
+        breakpoints: {
+            768: {
+                slidesPerView: 2,
+            },
+            1280: {
+                slidesPerView: 3,
+            },
         },
-        1280: {
-            slidesPerView: 3,
+
+        pagination: {
+            el: swiperEl.querySelector('.pagination'),
+            clickable: true,
+            bulletClass: 'pagination__button',
+            bulletActiveClass: 'pagination__button--active',
         },
-    },
-    pagination: {
-        el: '.pagination',
-        bulletClass: 'pagination__button',
-        bulletActiveClass: 'pagination__button--active',
-    },
-    navigation: {
-        nextEl: '.carousel-button.next',
-        prevEl: '.carousel-button.prev',
-    },
-});
+
+        navigation: {
+            nextEl: swiperEl.querySelector('.carousel-button.next'),
+            prevEl: swiperEl.querySelector('.carousel-button.prev'),
+        },
+    });
+}
