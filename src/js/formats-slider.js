@@ -1,7 +1,7 @@
-const swiperEl = document.querySelector('.swiper-container');
+const swiperEl = document.querySelector('.formats-section__container.swiper');
 
 if (swiperEl) {
-    const swiper = new Swiper(swiperEl, {
+    new Swiper(swiperEl, {
         loop: true,
         slidesPerView: 1,
         spaceBetween: 20,
@@ -23,8 +23,8 @@ if (swiperEl) {
         },
 
         navigation: {
-            nextEl: swiperEl.querySelector('.carousel-button.next'),
-            prevEl: swiperEl.querySelector('.carousel-button.prev'),
+            nextEl: '.carousel-button.next',
+            prevEl: '.carousel-button.prev',
         },
     });
 }

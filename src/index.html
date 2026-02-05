@@ -1,19 +1,34 @@
 <!DOCTYPE html>
 <html lang="uk">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="Bakery landing page - study project" />
   <title>Bakery Landing Page</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
+
+  <!-- Normalize -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
     integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+
+  <!-- 🔴 ОБОВʼЯЗКОВО: Swiper styles -->
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+  />
+
+  <!-- Main styles -->
   <link rel="stylesheet" href="./sass/main.scss" />
 </head>
 
 <body>
+  <!-- Header -->
   <load src="./partials/header.html" />
+
   <main>
     <load src="./partials/hero.html" />
     <load src="./partials/about.html" />
@@ -21,14 +36,18 @@
     <load src="./partials/products.html" />
     <load src="./partials/contact.html" />
   </main>
+
+  <!-- Footer -->
   <load src="./partials/footer.html" />
+
+  <!-- Modals -->
   <load src="./partials/modal.html" />
   <load src="./partials/mobile-menu.html" />
 
+  <!-- Swiper JS -->
   <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-  <script src="/js/formats-slider.js"></script>
-  <script src="/js/mobile-menu.js"></script>
-  <script src="/js/modal.js"></script>
-</body>
 
+  <!-- Main JS -->
+  <script type="module" src="./main.js"></script>
+</body>
 </html>

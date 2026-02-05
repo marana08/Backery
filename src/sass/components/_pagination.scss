@@ -16,3 +16,11 @@
         }
     }
 }
+
+.carousel-button.next{
+    transform: rotate(0deg);
+}
+
+.carousel-button.prev{
+    transform: rotate(180deg);
+}

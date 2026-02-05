@@ -11,6 +11,13 @@
 
     &__list {
         margin-bottom: 32px;
+
+        /* 🔧 важливо для Swiper */
+        display: flex;
+    }
+
+    .swiper-slide {
+        flex-shrink: 0;
     }
 
     &__button {
