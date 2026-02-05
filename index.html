@@ -1,18 +1,33 @@
 <!DOCTYPE html>
 <html lang="uk">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="Bakery landing page - study project" />
   <title>Bakery Landing Page</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
+
+  <!-- Normalize -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
     integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" crossorigin href="/Backery/assets/index-LOWV_uFg.css">
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+
+  <!-- 🔴 ОБОВʼЯЗКОВО: Swiper styles -->
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+  />
+
+  <!-- Main styles -->
+  <script type="module" crossorigin src="/Backery/index.js"></script>
+  <link rel="stylesheet" crossorigin href="/Backery/assets/index-BBf6avE2.css">
 </head>
 
 <body>
+  <!-- Header -->
   <header class="header">
     <div class="container">
         <div class="header__container">
@@ -71,6 +86,7 @@
         </div>
     </div>
 </header>
+
   <main>
     <section class="hero-section">
     <div class="container">
@@ -173,127 +189,123 @@
         <h2 class="formats-section__title section__title section__title--centered">
             Формати
         </h2>
+
         <div class="formats-section__slider">
+
             <button class="formats-section__button carousel-button prev" type="button">
                 <svg width="16" height="16">
                     <use href="/Backery/assets/symbol-defs-C7q764Of.svg#icon-arrow"></use>
                 </svg>
             </button>
-            <div class="formats-section__container swiper-container">
+
+            <!-- ❗ swiper -->
+            <div class="formats-section__container swiper">
+
+                <!-- ❗ swiper-wrapper -->
                 <ul class="formats-section__list swiper-wrapper">
+
+                    <!-- Slide 1 -->
                     <li class="swiper-slide">
                         <article class="format-card">
                             <img class="format-card__image" src="/Backery/assets/format-1-1x-BS4a3n0y.jpg"
-                                srcset="/Backery/assets/format-1-1x-BS4a3n0y.jpg 1x, /Backery/assets/format-1-2x-CbHBjLUu.jpg 2x" alt="Walrus format" />
+                                srcset="/Backery/assets/format-1-1x-BS4a3n0y.jpg 1x, /Backery/assets/format-1-2x-CbHBjLUu.jpg 2x" alt="Walrus format">
                             <h3 class="format-card__title" lang="en">Walrus</h3>
                             <div class="format-card__text">
-                                <p>Площа: до 120 м2</p>
+                                <p>Площа: до 120 м²</p>
                                 <p>Меню: розширене меню</p>
-                                <p>
-                                    Штат: 2 продавці-касири, 2 пекарі, 2 помічники пекаря, 2
-                                    офіціанти-різнороби
-                                </p>
+                                <p>Штат: 2 касири, 2 пекарі, 2 помічники, 2 офіціанти</p>
                                 <p>Посадкові місця: є</p>
                             </div>
                         </article>
                     </li>
+
+                    <!-- Slide 2 -->
                     <li class="swiper-slide">
                         <article class="format-card">
                             <img class="format-card__image" src="/Backery/assets/format-2-1x-D764B2mh.jpg"
-                                srcset="/Backery/assets/format-2-1x-D764B2mh.jpg 1x, /Backery/assets/format-2-2x-V4dlLDiP.jpg 2x"
-                                alt="Horseshoe format" />
+                                srcset="/Backery/assets/format-2-1x-D764B2mh.jpg 1x, /Backery/assets/format-2-2x-V4dlLDiP.jpg 2x" alt="Horseshoe format">
                             <h3 class="format-card__title" lang="en">Horseshoe</h3>
                             <div class="format-card__text">
-                                <p>Площа: до 120 м2</p>
+                                <p>Площа: до 120 м²</p>
                                 <p>Меню: розширене меню</p>
-                                <p>
-                                    Штат: 2 продавці-касири, 2 пекарі, 2 помічники пекаря, 2
-                                    офіціанти-різнороби
-                                </p>
+                                <p>Штат: 2 касири, 2 пекарі, 2 помічники, 2 офіціанти</p>
                                 <p>Посадкові місця: є</p>
                             </div>
                         </article>
                     </li>
+
+                    <!-- Slide 3 -->
                     <li class="swiper-slide">
                         <article class="format-card">
                             <img class="format-card__image" src="/Backery/assets/format-3-1x-D_iwFbCR.jpg"
-                                srcset="/Backery/assets/format-3-1x-D_iwFbCR.jpg 1x, /Backery/assets/format-3-2x-BBzkYwqt.jpg 2x"
-                                alt="Handlebar format" />
+                                srcset="/Backery/assets/format-3-1x-D_iwFbCR.jpg 1x, /Backery/assets/format-3-2x-BBzkYwqt.jpg 2x" alt="Handlebar format">
                             <h3 class="format-card__title" lang="en">Handlebar</h3>
                             <div class="format-card__text">
-                                <p>Площа: до 120 м2</p>
+                                <p>Площа: до 120 м²</p>
                                 <p>Меню: розширене меню</p>
-                                <p>
-                                    Штат: 2 продавці-касири, 2 пекарі, 2 помічники пекаря, 2
-                                    офіціанти-різнороби
-                                </p>
+                                <p>Штат: 2 касири, 2 пекарі, 2 помічники, 2 офіціанти</p>
                                 <p>Посадкові місця: є</p>
                             </div>
                         </article>
                     </li>
+
+                    <!-- Slide 4 -->
                     <li class="swiper-slide">
                         <article class="format-card">
                             <img class="format-card__image" src="/Backery/assets/format-1-1x-BS4a3n0y.jpg"
-                                srcset="/Backery/assets/format-1-1x-BS4a3n0y.jpg 1x, /Backery/assets/format-1-2x-CbHBjLUu.jpg 2x" alt="Walrus format" />
+                                srcset="/Backery/assets/format-1-1x-BS4a3n0y.jpg 1x, /Backery/assets/format-1-2x-CbHBjLUu.jpg 2x" alt="Walrus format">
                             <h3 class="format-card__title" lang="en">Walrus</h3>
                             <div class="format-card__text">
-                                <p>Площа: до 120 м2</p>
+                                <p>Площа: до 120 м²</p>
                                 <p>Меню: розширене меню</p>
-                                <p>
-                                    Штат: 2 продавці-касири, 2 пекарі, 2 помічники пекаря, 2
-                                    офіціанти-різнороби
-                                </p>
+                                <p>Штат: 2 касири, 2 пекарі, 2 помічники, 2 офіціанти</p>
                                 <p>Посадкові місця: є</p>
                             </div>
                         </article>
                     </li>
+
+                    <!-- Slide 5 -->
                     <li class="swiper-slide">
                         <article class="format-card">
                             <img class="format-card__image" src="/Backery/assets/format-2-1x-D764B2mh.jpg"
-                                srcset="/Backery/assets/format-2-1x-D764B2mh.jpg 1x, /Backery/assets/format-2-2x-V4dlLDiP.jpg 2x"
-                                alt="Horseshoe format" />
+                                srcset="/Backery/assets/format-2-1x-D764B2mh.jpg 1x, /Backery/assets/format-2-2x-V4dlLDiP.jpg 2x" alt="Horseshoe format">
                             <h3 class="format-card__title" lang="en">Horseshoe</h3>
                             <div class="format-card__text">
-                                <p>Площа: до 120 м2</p>
+                                <p>Площа: до 120 м²</p>
                                 <p>Меню: розширене меню</p>
-                                <p>
-                                    Штат: 2 продавці-касири, 2 пекарі, 2 помічники пекаря, 2
-                                    офіціанти-різнороби
-                                </p>
+                                <p>Штат: 2 касири, 2 пекарі, 2 помічники, 2 офіціанти</p>
                                 <p>Посадкові місця: є</p>
                             </div>
                         </article>
                     </li>
+
+                    <!-- Slide 6 -->
                     <li class="swiper-slide">
                         <article class="format-card">
                             <img class="format-card__image" src="/Backery/assets/format-3-1x-D_iwFbCR.jpg"
-                                srcset="/Backery/assets/format-3-1x-D_iwFbCR.jpg 1x, /Backery/assets/format-3-2x-BBzkYwqt.jpg 2x"
-                                alt="Handlebar format" />
+                                srcset="/Backery/assets/format-3-1x-D_iwFbCR.jpg 1x, /Backery/assets/format-3-2x-BBzkYwqt.jpg 2x" alt="Handlebar format">
                             <h3 class="format-card__title" lang="en">Handlebar</h3>
                             <div class="format-card__text">
-                                <p>Площа: до 120 м2</p>
+                                <p>Площа: до 120 м²</p>
                                 <p>Меню: розширене меню</p>
-                                <p>
-                                    Штат: 2 продавці-касири, 2 пекарі, 2 помічники пекаря, 2
-                                    офіціанти-різнороби
-                                </p>
+                                <p>Штат: 2 касири, 2 пекарі, 2 помічники, 2 офіціанти</p>
                                 <p>Посадкові місця: є</p>
                             </div>
                         </article>
                     </li>
+
                 </ul>
-                <div class="pagination">
-                    <span class="pagination__button"></span>
-                    <span class="pagination__button"></span>
-                    <span class="pagination__button"></span>
-                    <span class="pagination__button"></span>
-                </div>
+
+                <!-- ❗ ПУСТИЙ контейнер -->
+                <div class="pagination"></div>
             </div>
+
             <button class="formats-section__button carousel-button next" type="button">
                 <svg width="16" height="16">
                     <use href="/Backery/assets/symbol-defs-C7q764Of.svg#icon-arrow"></use>
                 </svg>
             </button>
+
         </div>
     </div>
 </section>
@@ -348,6 +360,8 @@
     </div>
 </section>
   </main>
+
+  <!-- Footer -->
   <footer class="footer">
     <div class="container">
         <div class="footer__container">
@@ -410,6 +424,8 @@
         </div>
     </div>
 </footer>
+
+  <!-- Modals -->
   <div class="backdrop is-hidden">
     <div class="modal">
         <button class="modal__btn-close modal-btn-close" type="button">
@@ -469,24 +485,23 @@
         </svg>
     </button>
 
-    <a class="mobile-menu__logo" href="/">
-        <svg class="mobile-menu__logo-icon" width="108" height="57">
+    <a href="#">
+        <svg class="footer__socials-icon" width="108" height="57">
             <use href="/Backery/assets/symbol-defs-C7q764Of.svg#icon-logo"></use>
         </svg>
     </a>
 
     <ul class="mobile-menu__list">
-                    <li><a class="link" href="#traditions-section">Наші традиції</a></li>
-                    <li><a class="link" href="#chefs-section">Шеф-кухарі</a></li>
-                    <li><a class="link" href="#formats-section">Формати</a></li>
-                    <li><a class="link" href="#contact-section">Контакти</a></li>
+        <li><a class="link" href="#traditions-section">Наші традиції</a></li>
+        <li><a class="link" href="#chefs-section">Шеф-кухарі</a></li>
+        <li><a class="link" href="#formats-section">Формати</a></li>
+        <li><a class="link" href="#contact-section">Контакти</a></li>
     </ul>
 </div>
 
+  <!-- Swiper JS -->
   <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-  <script src="js/formats-slider.js"></script>
-  <script src="js/mobile-menu.js"></script>
-  <script src="js/modal.js"></script>
-</body>
 
+  <!-- Main JS -->
+</body>
 </html>
